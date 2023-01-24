@@ -25,14 +25,16 @@ jobs:
     # Each item nested under this section is a separate action or shell script.
     steps:
       - name: echo a string
-        run: echo  "Hello World"
+        run: echo "Hello World"
       - name: multiline script
         run: |
           node -v
           npm -v
 ```
+
 3. Commit and push.
 
 
 ####Appendix:
 - https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions
+- [Workflow syntax](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#using-a-specific-shell)
